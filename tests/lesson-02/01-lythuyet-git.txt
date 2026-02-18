@@ -1,0 +1,8 @@
+// khởi tạo local repo -> làm 1 lần duy nhất
+git init
+
+// thêm file vào staging -> làm mỗi khi có thay đổi
+git add .
+
+// commit file -> -> làm mỗi khi có thay đổi
+git commit - m "<message>"

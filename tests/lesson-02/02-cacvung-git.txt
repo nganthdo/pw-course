@@ -1,0 +1,25 @@
+a. tạo 3 files: file1, file2, file3
+- working area: file1, file2, file3
+- staging area: trống
+- repository: trống
+
+b. chạy lệnh: git init
+- working area: file1, file2, file3
+- staging area: trống
+- repository: trống
+
+c. chạy lệnh: git commit -m"init project"
+=> không tạo commit vì lúc này working area chưa có thay đổi gì
+
+d. chạy lệnh: git add file1
+- working area: file1, file2, file3
+- staging area: file1
+- repository: trống
+
+e. chạy lệnh: git commit -m"add file1"
+- working area: file1, file2, file3
+- staging area: trống
+- repository: file1
+
+f. chạy lệnh: git commit -m"add file"
+=> không tạo commit mới vì không có gì thay đổi ở khu vực working area
