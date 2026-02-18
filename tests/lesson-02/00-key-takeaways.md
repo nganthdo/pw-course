@@ -6,6 +6,7 @@
     - Centralize: lưu ở 1 máy chủ tập trung
     - Distributed: lưu ở nhiều máy khác nhau
 - Phổ biến nhất là Distributed Version Control System (ex: Git)
+
 ### 1.1 Git
 - Cha đẻ của GIT là Linux Torvalds
 - Tính năng: dễ dùng.
