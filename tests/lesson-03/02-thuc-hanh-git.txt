@@ -1,0 +1,50 @@
+a: tạo 3 file: file1, file2, file3
+- local: file1, file2, file3
+- working: file1, file2, file3
+- staging: trống
+- repository: trống
+
+b: chạy lệnh: git init
+- local: file1, file2, file3
+- working: file1, file2, file3 (untracked)
+- staging: trống
+- repository: trống
+
+c. chạy lệnh: git commit -m "init project"
+- no commit 
+
+d. chạy lệnh: git add file1
+- local: file1, file2, file3
+- working: file1, file2 (untracked), file3 (untracked)
+- staging: file1 (tracked)
+- repository: trống
+
+e. chạy lệnh: git commit -m "add file"
+- local: file1, file2, file3
+- working: file1, file2 (untracked), file3 (untracked)
+- staging: trống
+- repository: file1
+
+f. chạy lệnh: git add .
+- local: file1, file2, file3
+- working: file1, file2, file3
+- staging: file2 (tracked), file3 (tracked)
+- repository: file1
+
+g. chạy lệnh: git restore --staged file2
+- local: file1, file2, file3
+- working: file1, file2 (untracked), file3(staged)
+- staging: file3 (tracked)
+- repository: file1
+
+h. chạy lệnh: git commit -m "add all files"
+- local: file1, file2, file3
+- working: file1, file2 (untracked), file3
+- staging: trống
+- repository: file1, file3
+
+i. chạy lệnh: git reset HEAD~1
+- local: file1, file2, file3
+- working: file1, file2 (untracked), file3 (untracked)
+- staging: trống
+- repository: file1

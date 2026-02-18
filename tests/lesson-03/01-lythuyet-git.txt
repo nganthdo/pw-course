@@ -1,0 +1,11 @@
+# ghi đè commit gần nhất trong Repository
+git commit --amend
+
+# sửa message của commit cuối
+git commit --amend -m "<message>"
+
+# Quay từ vùng staging area lại vùng working directory
+git restore --staged <file>
+
+# Đưa từ vùng Repository lại vùng working directory
+git reset HEAD~1

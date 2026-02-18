@@ -1,0 +1,30 @@
+a. chạy lệnh: git init
+git bắt đầu quản lý folder demo
+- local:  trống
+- working:  trống
+- staging: trống
+- repository: trống
+
+b. tạo file: file1.txt, file2.txt, oops/file3.txt
+- local: file1.txt, file2.txt, oops/file3.txt
+- working: file1.txt, file2.txt, oops/file3.txt
+- staging: trống
+- repository: trống
+
+c. thêm file .gitignore, thêm vào 2 dòng: file1.txt, oops/
+- local: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- working: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- staging: trống
+- repository: trống
+
+d. chạy lệnh: git add .
+- local: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- working: file1.txt (ignored), file2.txt , oops/file3.txt (ignored), .gitignore
+- staging: file2.txt (tracked), .gitignore
+- repository: trống
+
+e. chạy lệnh: git commit -m "init project"
+- local: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- working: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- staging: trống
+- repository: file2.txt, .gitignore
