@@ -1,0 +1,21 @@
+1. Cấu trúc DOM cơ bản của 1 trang web bao gồm các thẻ gì?
+- <html> </html> : thẻ gốc của trang
+- <head> </head> : thẻ chứa metadata (tiêu đề website, hiện thị google)
+- <body> </body>: nội dung của website hiện thị
+- <div> </div>: khối, container chung
+- <span> </span>: Inline container
+- <header> </header>, <footer> </footer>, <nav> </nav>, <section> </section> : thẻ ngữ nghĩa
+
+2. Hãy mô tả cấu trúc html của 1 bảng (table)
+<table>
+    <thead>
+        <tr>
+            <th> ...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>...</td>
+        </tr>
+    </tbody>
+</table>
