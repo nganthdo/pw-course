@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import path from 'path/win32';
+import path from 'path';
 
 test('register user', async ({ page }) => {
 
@@ -92,11 +92,11 @@ test('register user', async ({ page }) => {
         await page.locator('//span[@class="slider round"]').click();
     });
 
-    // step 16: rating stars
-    // await test.step("rate stars", async () => {
-
-        
-    // });
+    //step 16: rating stars
+    await test.step("rate stars", async () => {
+        const starRating = page.locator('//div[@id="starRating"]');        
+        await starRating.click();
+    });
 
     //click Register button
     await test.step("click register button", async () => {
